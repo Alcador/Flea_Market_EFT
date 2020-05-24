@@ -1,8 +1,8 @@
 <?php
+error_reporting(0);
 
 session_start();
 //include("conn.php");
-
 
  if(!isset($_SESSION['id'])) {
      header("Location: login_page.php");
@@ -39,9 +39,7 @@ if(isset($_POST['login'])) {
 <h1>INDEX</h1>
 <?php include "login_status.php"; ?>
 <form action="index.php" method="post" enctype="multipart/form-data">
-    <input type="text" placeholder="Username" name="Username" autofocus>
-    <input type="password" placeholder="Password" name="Password">
-    <input type="submit" value="Login" name="Login">
+
 </form>
 
 </body>
