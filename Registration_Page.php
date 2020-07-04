@@ -26,7 +26,6 @@ if(!empty($_POST)) {
 
 
     $sql = "SELECT * FROM users WHERE username = '${username_register}'";
-   // echo " ::Inside If:: ";
 
     $query = mysqli_query($db, $sql);
     //var_dump($query);
