@@ -53,6 +53,8 @@ if(!empty($_POST)) {
         echo "<script type='text/javascript'>alert('Success');</script>";
     }
 
+
+
     ///////////////////////// Username and Password Checks
     if($username != $username_search) {
         echo "<script type='text/javascript'>alert('User does not exist in database!');</script>";
