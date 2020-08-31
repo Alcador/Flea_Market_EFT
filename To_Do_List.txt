@@ -6,5 +6,5 @@ TO DO List:
 - Database Additions (Inventory Columns / Revision) //DONE
 	Details: Add new table for modular item insertion (Item ID and Item Name) then add another table to connect Users and Items (User ID, Item ID), now we can add any ammount of NEW* items to the database and still add them to New or Old users.
 
-- Scav Case Implementation //In Progress
+- Scav Case Implementation //DONE
 	Details: after having a working inventory system, add XYZ ammount of unique items to database, now make a randomisation system for choosing items and giving them to players that rolled the scav case.

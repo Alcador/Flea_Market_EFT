@@ -17,10 +17,7 @@ require_once "db.php";
 //echo "777777777 YEP COCK 77777777777";
 
 //if(!empty($_POST))
-echo "Random1";
 if(!empty($_POST)) {
-    echo "Random2";
-    echo "Random3";
     $username_register = $_POST['Username_Register'];
     $password_register = $_POST['Password_Register'];
 
@@ -46,7 +43,7 @@ if(!empty($_POST)) {
 
     ///////////////////////// Username and Password Checks AND Insertion
     if($username_register === $username_search) {
-        echo "User already exists in database!";
+        echo "<script type='text/javascript'>alert('User already exists in database!');</script>";
     }
     else {
         $sql_insert =  "INSERT INTO users (username, password)
@@ -83,15 +80,68 @@ if(!empty($_POST)) {
 ?>
 
 <head>
-    <title> Registration PAGE</title>
+    <title> LOGIN PAGE</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <style>
+        @font-face {
+            font-family: 'benderlight';
+            src: url('jovanny_lemonad_-_bender-light-webfont.woff2') format('woff2'),
+            url('jovanny_lemonad_-_bender-light-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+
+        }
+        input[type=text]{
+            padding: 5px;
+            float: right;
+            margin-top: 8px;
+            margin-right: 16px;
+            background: #ddd;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+            font-family: benderlight, Arial, 'Times New Roman';
+        }
+        input[type=password]{
+            padding: 5px;
+            float: right;
+            margin-top: 8px;
+            margin-right: 16px;
+            background: #ddd;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+            font-family: benderlight, Arial, 'Times New Roman';
+        }
+        input[type=submit]{
+            padding: 5px;
+            float: right;
+            margin-top: 8px;
+            margin-right: 16px;
+            background: #ddd;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+            font-family: benderlight, Arial, 'Times New Roman';
+            font-weight: bolder;
+        }
+
+    </style>
 </head>
+<html>
 <body>
+<div id="container">
+    <div id="navbar">
+        <a href="index.php">Home</a>
+        <form action="Registration_Page.php" method="post" enctype="multipart/form-data">
+            <input type="submit" value="Register" name="Login">
+            <input type="password" placeholder="Password" name="Password_Register" required>
+            <input type="text" placeholder="Username" name="Username_Register" autocomplete="off" autofocus required>
+        </form>
+    </div>
+    <div id="center">
 
-<h1>Register</h1>
-<form action="Registration_Page.php" method="post" enctype="multipart/form-data">
-    <input type="text" placeholder="Username" name="Username_Register" autofocus required>
-    <input type="password" placeholder="Password" name="Password_Register" required>
-    <input type="submit" value="Register" name="Login">
-</form>
-
+    </div>
+</div>
 </body>
+</html>
