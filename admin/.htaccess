@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Restricted Content"
+AuthUserFile C:/xampp/.htpasswd
+Require valid-user

@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'benderlight';
+    src: url('jovanny_lemonad_-_bender-light-webfont.woff2') format('woff2'),
+    url('jovanny_lemonad_-_bender-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+html,body{
+    height:100%
+}
+body{
+    margin: 0;
+    display: grid;
+    font-family: benderlight, Arial, 'Times New Roman';
+}
+
+#navbar{
+    background: orange;
+    height: 5%;
+    font-weight: bold;
+}
+#navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#navbar a.active {
+    background-color: white;
+    color: black;
+}
+
+.login-container{
+     float: right;
+ }
+
+#center{
+    color: white;
+    position: relative;
+    background-size: cover;
+    height: 100%;
+    z-index: 1;
+    background-image: linear-gradient(rgba(0,0,0,0.82), rgba(0,0,0,0.82)), url("wvhp9gngz7941.jpg");
+}
+
+#footer{
+    background: #f2f2f2;
+    height: 2%;
+}
+.logout a:link{
+    color: white;
+    text-decoration: none;
+}
+.logout a:hover{
+    color: white;
+    text-decoration: none;
+}
+.outbutton{
+    float: right;
+}
+
